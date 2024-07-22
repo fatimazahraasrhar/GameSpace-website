@@ -2,7 +2,7 @@
 :root{
     --main-color:#8e44ad;
     --black:#222;
-    --white:#222;
+    --white:#fff;
     --light-black:#777;
     --light-white:#fff9;
     --dark-bg:rgba(0,0,0,.7);
@@ -37,5 +37,14 @@ html::-webkit-scrollbar-thumb{
     }
 .header{
     position:sticky;
-    top:0; left:0; right:0:
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+    
 }
