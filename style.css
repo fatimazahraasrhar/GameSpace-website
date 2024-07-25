@@ -166,13 +166,13 @@ section{
 }
 .home-about .content h3{
     font-size: 3rem;
-    color: var(--black)
+    color: var(--black);
 }
 .home-about .content p{
     font-size: 1.3rem;
     padding: 1rem 0;
     line-height: 2;
-    color: var(--black)
+    color: var(--black);
 }
 .about{
     display: flex;
@@ -190,11 +190,9 @@ section{
     flex:1 1 41rem;
     text-align: center;
 }
-.about .content h2{
-    font-size: 1.5rem;
+.about .content h3{
+    font-size: 3rem;
     color:var(--black);
-    line-height: 2;
-    padding: 1rem 0;
 } 
 .about .content p{
     font-size: 1.5rem;
@@ -247,6 +245,91 @@ section{
     text-transform: uppercase;
     color: var(--black);
 }
+.registration .registration-form{
+    padding: 2rem;
+    background: var(--light-bg);
+}
+.registration .registration-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.registration .registration-form .flex .inputbox{
+    flex:1 1 41rem;
+}
+.registration .registration-form .flex .inputbox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+.registration .registration-form .flex .inputbox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+.registration .registration-form .flex .inputbox input:focus::placeholder{
+    color: var(--light-white);
+}
+.registration .registration-form .flex .inputbox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.registration .registration-form .btn{
+    margin-top: 2rem;
+}
+
+.login .login-form{
+    padding: 2rem;
+    background: var(--light-bg);
+    max-width: 40rem; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the form */
+}
+
+.login .login-form .flex{
+    display: block;
+    gap: 2rem;
+}
+
+.login .login-form .flex .inputbox{
+    margin-bottom: 1.5rem; /* Add space between input fields */
+}
+
+.login .login-form .flex .inputbox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.login .login-form .flex .inputbox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.login .login-form .flex .inputbox input:focus::placeholder{
+    color: var(--light-white);
+}
+
+.login .login-form .flex .inputbox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.login .login-form .btn {
+    margin-top: 2rem;
+    width: 100%; 
+}
+.login .login-form a{
+    text-align: center;
+}
+
 .footer{
     background: url(gaming-bg.jpg) no-repeat;
     background-size: cover;
@@ -301,6 +384,12 @@ section{
     }
 }
 @media (max-width:768px){
+    .heading h1{
+        font-size: 4rem;
+    }
+    .heading-title{
+        font-size: 3rem;
+    }
     #menu-btn{
         display: inline-block;
         transition: .2s linear;
@@ -330,11 +419,9 @@ section{
     }
 }
 @media (max-width:991px){
-
     html{
         font-size: 55%;
 }
-
     section{
         padding: 3rem 2rem;
     }

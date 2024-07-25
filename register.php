@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>register</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -19,15 +19,66 @@
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <a href="package.php">package</a>
-    <a href="book.php">book</a>
+    <a href="events.php">events</a>
+    <a href="register.php">register</a>
+    <a href="login.php">login</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
 <!-- header section ends  -->
 
 
+<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
+<h1>register now</h1>
+</div>
+<!-- register section starts -->
 
+<!-- register section ends -->
+<section class="registration">
+    <h1 class="heading-title">join the ultimate gaming experience!</h1>
+    <form action="registration_form.php" method="post" class="registration-form">
+        <div class="flex">
+            <div class="inputbox">
+                <span>name :</span>
+                <input type="text" placeholder="enter your name" name="name">
+            </div>
+            <div class="inputbox">
+                <span>email :</span>
+                <input type="email" placeholder="enter your email" name="email">
+            </div>
+            <div class="inputbox">
+                <span>password :</span>
+                <input type="password" placeholder="enter your password" name="password">
+            </div>
+            <div class="inputbox">
+                <span>phone :</span>
+                <input type="phone" placeholder="enter your phone" name="phone">
+            </div>
+            <div class="inputbox">
+                <span>console :</span>
+                <input type="text" placeholder="choose your console" name="console">
+            </div>
+            <div class="inputbox">
+                <span>pc :</span>
+                <input type="text" placeholder="choose your pc" name="pc">
+            </div>
+            <div class="inputbox">
+                <span>date :</span>
+                <input type="date" name="date">
+            </div>
+            <div class="inputbox">
+                <span>debut time :</span>
+                <input type="time" name="time">
+            </div>
+            <div class="inputbox">
+                <span>period in minutes :</span>
+                <input type="number" placeholder="enter your period" name="period">
+            </div>
+        </div>
+        <input type="submit" value="submit" class="btn" name="send">
+    </form>
+
+</section>
 
 
 
@@ -38,8 +89,8 @@
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <a href="package.php"><i class="fas fa-angle-right"></i>package</a>
-        <a href="book.php"><i class="fas fa-angle-right"></i>book</a>
+        <a href="events.php"><i class="fas fa-angle-right"></i>events</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
         </div>
 
         <div class="box">
@@ -53,7 +104,7 @@
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"> <i class="fas fa-envelope"></i> Gamespace@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 
@@ -67,13 +118,6 @@
     </div>
     <div class="credit"> created by fatima zahra asrhar </div>
 </section>
-
-
-
-<div class="heading",style="">
-<h3></h3>
-
-</div>
 
 
 <!-- swiper js link  -->

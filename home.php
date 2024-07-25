@@ -22,6 +22,9 @@
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <a href="register.php">register</a>
+    <a href="login.php">login</a>
+  
+  
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
@@ -64,11 +67,10 @@
         <!-- <div class="swiper-pagination"></div> -->
     </div>
 </section>
-
 <!-- home section ends -->
 
 
-<!-- home about section start -->
+<!-- home about section starts -->
 <section class="home-about">
     <div class="image">
     <img src="slideabout1.jpg" alt="">
@@ -82,6 +84,11 @@
 
 </section>
 <!-- home about section ends -->
+
+<!-- home packages section starts -->
+ 
+<!-- home packages section ends -->
+
 
 
 <!-- services section start -->
@@ -153,7 +160,7 @@
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"> <i class="fas fa-envelope"></i> Gamespace@gmail.com</a>
+        <a href="#" style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>events</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -19,18 +19,36 @@
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <a href="package.php">package</a>
-    <a href="book.php">book</a>
+    <a href="events.php">events</a>
+    <a href="register.php">register</a>
+    <a href="login.php">login</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
 <!-- header section ends  -->
 
+<!-- events section starts -->
+<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
+<h1>our events</h1>
+</div>
 
 
-
-
-
+<!-- events section ends -->
+<section class="packages">
+    <h1 class="heading-title">latest events</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>fifa tournament</h3>
+                    <p>Get in the Game! Check out our FIFA tournament for a chance to compete, win prizes, and enjoy the action. Don’t miss out—find out more and register today!</p>
+                    <a href="register.php" class="btn">reg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- footer section starts -->
 <section class="footer">
     <div class="box-container">
@@ -38,8 +56,8 @@
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <a href="package.php"><i class="fas fa-angle-right"></i>package</a>
-        <a href="book.php"><i class="fas fa-angle-right"></i>book</a>
+        <a href="events.php"><i class="fas fa-angle-right"></i>events</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
         </div>
 
         <div class="box">
@@ -53,7 +71,7 @@
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"> <i class="fas fa-envelope"></i> Gamespace@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 
