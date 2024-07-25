@@ -37,7 +37,7 @@
         <img src="longslideabout2.jpg" alt="">
     </div>
     <div class="content">
-    <h2>About GameSpace</h2>
+    <h3>About GameSpace</h3>
     <!-- <h4>Your Premier Gaming Destination</h4> -->
     <p>GameSpace is your ultimate hub for gaming excellence, offering a state-of-the-art lounge equipped with the latest consoles and high-definition screens. We are dedicated to delivering an unparalleled gaming experience where excitement and immersion are at the forefront.</p>
     <!-- <h4>Our Mission</h4> -->
@@ -48,10 +48,6 @@
     <p>We believe in building a vibrant gaming community. Our regular events and tournaments provide exciting opportunities for gamers to showcase their skills, compete with peers, and meet new friends. GameSpace is not just about playing games—it's about connecting with fellow enthusiasts and being part of a dynamic community.</p>
     <!-- <h4>Get In Touch</h4> -->
     <p>Ready to experience GameSpace for yourself? For more information or to book your next session, contact us at <a href="fatimazahraasrhar@gmail.com">fatimazahraasrhar@gmail.com</a> or follow us on social media for the latest updates and event announcements. We look forward to welcoming you to GameSpace!</p>
-    <h4></h4>
-    <p></p>
-    <h4></h4>
-    <p></p>
 </div>
 </section>
 <!-- about section ends -->
