@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>register</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -27,27 +27,32 @@
  </section>
 <!-- header section ends  -->
 
-<!-- about section starts -->
-<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
-<h1>about us</h1>
-</div>
-
-<section class="about" >
-    <div class="content">
-    <h3>About GameSpace</h3>
-    <!-- <h4>Your Premier Gaming Destination</h4> -->
-    <p>GameSpace is your ultimate hub for gaming excellence, offering a state-of-the-art lounge equipped with the latest consoles and high-definition screens. We are dedicated to delivering an unparalleled gaming experience where excitement and immersion are at the forefront.</p>
-    <!-- <h4>Our Mission</h4> -->
-    <p>Our mission is to create an engaging environment where gamers of all levels can enjoy their favorite titles, participate in thrilling tournaments, and connect with a passionate community. We aim to be more than just a gaming venue—our goal is to foster a space where everyone feels welcome and valued.</p>
-    <!-- <h4>Facilities & Features</h4> -->
-    <p>At GameSpace, you'll find a thoughtfully designed lounge with cutting-edge gaming technology. Our comfortable seating and high-speed internet ensure that every gaming session is smooth and enjoyable. Whether you're here for competitive play or casual fun, our facilities are crafted to enhance your experience.</p>
-    <!-- <h4>Community & Events</h4> -->
-    <p>We believe in building a vibrant gaming community. Our regular events and tournaments provide exciting opportunities for gamers to showcase their skills, compete with peers, and meet new friends. GameSpace is not just about playing games—it's about connecting with fellow enthusiasts and being part of a dynamic community.</p>
-    <!-- <h4>Get In Touch</h4> -->
-    <p>Ready to experience GameSpace for yourself? For more information or to book your next session, contact us at <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=fatimazahraasrhar@gmail.com" target="_blank" style="text-transform: lowercase">fatimazahraasrhar@gmail.com</a> or follow us on social media for the latest updates and event announcements. We look forward to welcoming you to GameSpace!</p>
-</div>
+<!-- register section starts -->
+<section class="sign">
+    <h1 class="heading-title">sign up!</h1>
+    <form action="sign_form.php" method="post" class="sign-form">
+        <div class="flex">
+            <div class="inputbox">
+                <span>name :</span>
+                <input type="text" placeholder="enter your name" name="name">
+            </div>
+            <div class="inputbox">
+                <span>email :</span>
+                <input type="email" placeholder="enter your email" name="email">
+            </div>
+            <div class="inputbox">
+                <span>password :</span>
+                <input type="password" placeholder="enter your password" name="password">
+            </div>
+            <div class="inputbox">
+                <span>phone :</span>
+                <input type="phone" placeholder="enter your phone" name="phone">
+            </div>
+        </div>
+        <input type="submit" value="submit" class="btn" name="send">
+    </form>
 </section>
-<!-- about section ends -->
+<!-- register section ends -->
 
 
 <!-- footer section starts -->

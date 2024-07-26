@@ -21,6 +21,7 @@
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <a href="register.php">register</a>
+    <a href="sign.php">sign up</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
@@ -42,7 +43,7 @@
             </div>
         </div>
         <input type="submit" value="login" class="btn" name="login">
-        <a href="register.php" class="btn">sign in</a> 
+        <a href="sign.php" class="btn">sign up</a> 
     </form>
 </section>
 <!-- login section ends -->

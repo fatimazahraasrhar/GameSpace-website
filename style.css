@@ -282,6 +282,44 @@ section{
     margin-top: 2rem;
 }
 
+
+
+.sign .sign-form{
+    padding: 2rem;
+    background: var(--light-bg);
+}
+.sign .sign-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.sign .sign-form .flex .inputbox{
+    flex:1 1 41rem;
+}
+.sign .sign-form .flex .inputbox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+.sign .sign-form .flex .inputbox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+.sign .sign-form .flex .inputbox input:focus::placeholder{
+    color: var(--light-white);
+}
+.sign .sign-form .flex .inputbox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.sign .sign-form .btn{
+    margin-top: 2rem;
+}
 .login .login-form{
     padding: 2rem;
     background: var(--light-bg);
@@ -328,6 +366,32 @@ section{
 }
 .login .login-form a{
     text-align: center;
+}
+.profil {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    text-align: left;
+    margin: 40px 250px;
+    background: var(--light-bg);
+}
+
+.profil h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.profil p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.profil p span{
+    font-size: 2rem;
+    color:var(--black);
+    
 }
 
 .footer{

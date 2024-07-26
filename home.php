@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- header section starts  -->
  <section class="header">
  <a href="home.php" class="logo">GameSpace</a>
@@ -23,8 +22,6 @@
     <a href="events.php">events</a>
     <a href="register.php">register</a>
     <a href="login.php">login</a>
-  
-  
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>

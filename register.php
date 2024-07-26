@@ -27,32 +27,14 @@
  </section>
 <!-- header section ends  -->
 
-
-<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
-<h1>register now</h1>
-</div>
 <!-- register section starts -->
-
-<!-- register section ends -->
 <section class="registration">
-    <h1 class="heading-title">join the ultimate gaming experience!</h1>
+    <h1 class="heading-title">join the ultimate gaming experience by reserving your place!</h1>
     <form action="registration_form.php" method="post" class="registration-form">
         <div class="flex">
             <div class="inputbox">
-                <span>name :</span>
-                <input type="text" placeholder="enter your name" name="name">
-            </div>
-            <div class="inputbox">
-                <span>email :</span>
-                <input type="email" placeholder="enter your email" name="email">
-            </div>
-            <div class="inputbox">
-                <span>password :</span>
-                <input type="password" placeholder="enter your password" name="password">
-            </div>
-            <div class="inputbox">
-                <span>phone :</span>
-                <input type="phone" placeholder="enter your phone" name="phone">
+                <span>user ID :</span>
+                <input type="number" placeholder="enter your ID" name="id_user">
             </div>
             <div class="inputbox">
                 <span>console :</span>
@@ -77,9 +59,8 @@
         </div>
         <input type="submit" value="submit" class="btn" name="send">
     </form>
-
 </section>
-
+<!-- register section ends -->
 
 
 <!-- footer section starts -->
