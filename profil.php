@@ -36,7 +36,7 @@ require_once("registration_form.php");
 <div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
 <h1>profil</h1>
 </div>
-<!-- profile section starts -->
+<!-- display profile section starts -->
  <section class="profil">
     <div class="content">
     <h3>my profile</h3>
@@ -46,11 +46,11 @@ require_once("registration_form.php");
     <p>phone : <?= $_SESSION['phone'] ?> </p>
     </div>
 </section>
-<!-- profile section ends -->
+<!-- display profile section ends -->
 
-<!-- reservation section starts -->
+<!-- display reservation section starts -->
 <?php include 'displayreservation.php'; ?>
-<!-- reservation section ends -->
+<!-- display reservation section ends -->
 
 <section class="footer">
     <div class="box-container">
