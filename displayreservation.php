@@ -4,12 +4,12 @@ $connection = mysqli_connect('localhost','root','','registration_db');
 // $reservations = array();
 
 if (isset($_SESSION['id'])) {
-    $id = $_SESSION['id'];
+    $email = $_SESSION['email'];
 
     if($connection->connect_error){
         die("connection failed: ". $connection->connect_error);
     }
-    $query = "SELECT * FROM reservations WHERE id_user = '$id'";
+    $query = "SELECT * FROM reservations WHERE email_user = '$email'";
     $result = mysqli_query($connection, $query);
     
     // while ($row = mysqli_fetch_assoc($result)) {

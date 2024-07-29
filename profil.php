@@ -1,6 +1,5 @@
 <?php 
-require_once("login_form.php");
-require_once("registration_form.php");
+include('login_form.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +7,7 @@ require_once("registration_form.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>events</title>
+    <title>profil</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -26,7 +25,9 @@ require_once("registration_form.php");
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <a href="register.php">register</a>
-    <a href="login.php">login</a>
+    <?php if (isset($_SESSION['islogin']) && $_SESSION['islogin']): ?>
+        <a href="logout.php">Logout</a>  <a  href="#" style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
+                <?php endif; ?>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
@@ -37,10 +38,10 @@ require_once("registration_form.php");
 <h1>profil</h1>
 </div>
 <!-- display profile section starts -->
+
  <section class="profil">
     <div class="content">
-    <h3>my profile</h3>
-    <p>id :<?= $_SESSION['id'] ?></p>
+    <h3>my profil</h3>
     <p>name : <?= $_SESSION['name'] ?> </p>
     <p>email : <?= $_SESSION['email'] ?> </p>
     <p>phone : <?= $_SESSION['phone'] ?> </p>

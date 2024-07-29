@@ -33,8 +33,8 @@
     <form action="registration_form.php" method="post" class="registration-form">
         <div class="flex">
             <div class="inputbox">
-                <span>user ID :</span>
-                <input type="number" placeholder="enter your ID" name="id_user">
+                <span>user email:</span>
+                <input type="number" placeholder="enter your ID" name="email_user">
             </div>
             <div class="inputbox">
                 <span>console :</span>

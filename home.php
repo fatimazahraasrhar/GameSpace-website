@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link class="icon" rel="shortcut icon" type="x-icon" href="gamespaceicon.jpg"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>GameSpace</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -69,9 +70,7 @@
 
 <!-- home about section starts -->
 <section class="home-about">
-    <div class="image">
-    <img src="slideabout1.jpg" alt="">
-    </div>
+  
 
     <div class="content">
     <h3>about us</h3>

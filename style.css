@@ -161,8 +161,11 @@ section{
 }
 .home-about .content{
     flex:1 1 41rem;
+    text-align: center;
     padding: 3rem;
     background: var(--light-bg);
+    max-width: 70rem; /* Adjust the maximum width as needed */
+    margin: auto;
 }
 .home-about .content h3{
     font-size: 3rem;
@@ -390,8 +393,10 @@ section{
 }
 .profil p span{
     font-size: 2rem;
-    color:var(--black);
-    
+    color:var(--black); 
+}
+.icon{
+    border-radius: 40px;
 }
 
 .footer{

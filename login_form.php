@@ -5,8 +5,6 @@ $connection = mysqli_connect('localhost','root','','registration_db');
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    // $islogin=false;
-    $_SESSION['islogin']=  false;
     if($connection->connect_error){
         die("connection failed: ". $connection->connect_error);
     }
@@ -20,10 +18,10 @@ if (isset($_POST['login'])) {
         $_SESSION['email']= $user['email'];
         $_SESSION['name']=$user['name'];
         $_SESSION['phone']=$user['phone'];
-
+        $_SESSION['islogin']=true;
         header("location:profil.php");
     }else{
-
+        echo "this user doesn't exist!!";
         exit();
     }
 
