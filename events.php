@@ -33,7 +33,7 @@ include('login_form.php');
 <!-- header section ends  -->
 
 <!-- events section starts -->
-<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
+<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat; height: 40vh;">
 <h1>our events</h1>
 </div>
 

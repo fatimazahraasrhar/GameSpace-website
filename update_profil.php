@@ -43,10 +43,6 @@ include('login_form.php');
                 <span>new email :</span>
                 <input type="email" placeholder="enter your email" name="email" value="<?php echo $_SESSION['email'] ?>">
             </div>
-            <!-- <div class="inputbox">
-                <span>password :</span>
-                <input type="password" placeholder="enter your password" name="password">
-            </div> -->
             <div class="inputbox">
                 <span>new phone :</span>
                 <input type="phone" placeholder="enter your phone" name="phone" value="<?php echo $_SESSION['phone'] ?>">

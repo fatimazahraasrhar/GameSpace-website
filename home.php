@@ -37,7 +37,7 @@ include('login_form.php');
 <section class="home">
     <div class="swiper home-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide sl1" style="background:url(slide1.jpg) no-repeat">
+            <div class="swiper-slide slide sl1" style="background:url(img/slide1.jpg) no-repeat">
                 <div class="content">
                     <h3>welcome to GameSpace!</h3>
                     <span>Step into the ultimate gaming hub.<br> Join us for top-notch consoles, thrilling games, and an epic experience.<br> Ready to play?</span>
@@ -45,7 +45,7 @@ include('login_form.php');
                 </div>
 
             </div>
-            <div class="swiper-slide slide" style="background:url(slide2.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url(img/slide2.jpg) no-repeat">
                 <div class="content">
                     <h3>game of the month</h3>
                     <span>Experience the epic journey of Stellar Blade,  <br> our game of the month! Dive into an extraordinary <br>  world of futuristic combat and breathtaking  <br> visuals.</span>
@@ -53,7 +53,7 @@ include('login_form.php');
                 </div>
 
             </div>
-            <div class="swiper-slide slide" style="background:url(slide3.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url(img/slide3.jpg) no-repeat">
                 <div class="content">
                 <h3>FIFA Tournament</h3>
                     <span><p><strong>Date:</strong> August 15th</p>
@@ -94,15 +94,15 @@ include('login_form.php');
     <h1 class="heading-title">Our consoles</h1>
         <div class="box-container">
             <div class="box">
-                <img src="playstationlogo.png" alt="">
+                <img src="img/playstationlogo.png" alt="">
                 <h2>playstation</h2>
             </div>
             <div class="box">
-                <img src="xboxlogo.png" alt="">
+                <img src="img/xboxlogo.png" alt="">
                 <h2>xbox</h2>
             </div>
             <div class="box">
-                <img src="nintendoswitchlogo.png" alt="">
+                <img src="img/nintendoswitchlogo.png" alt="">
                 <div>
                     <h2>nintendo switch</h2>
                  </div>
@@ -111,19 +111,19 @@ include('login_form.php');
         <h1 class="heading-title">Our PCs</h1>
         <div class="box-container">
             <div class="box">
-                <img src="hplogo.jpg" alt="">
+                <img src="img/hplogo.jpg" alt="">
                 <h2>HP</h2>
             </div>
             <div class="box">
-                <img src="delllogo.jpg" alt="">
+                <img src="img/delllogo.jpg" alt="">
                 <h2>dell</h2>
             </div>
             <div class="box">
-                <img src="asuslogo.jpg" alt="">
+                <img src="img/asuslogo.jpg" alt="">
                 <h2>asus</h2>
             </div>
             <div class="box">
-                <img src="samsunglogo.jpg" alt="">
+                <img src="img/samsunglogo.jpg" alt="">
                 <div>
                     <h2>samsung</h2>
                 </div>

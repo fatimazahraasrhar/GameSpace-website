@@ -456,7 +456,7 @@ section{
     color: #666;
 }
 .footer{
-    background: url(gaming-bg.jpg) no-repeat;
+    background: url(img/gaming-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

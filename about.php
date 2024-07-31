@@ -33,7 +33,7 @@ include('login_form.php');
 <!-- header section ends  -->
 
 <!-- about section starts -->
-<div class="heading" style="background:url(gaming-bg1.jpg) no-repeat; height: 40vh;">
+<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat; height: 40vh;">
 <h1>about us</h1>
 </div>
 
