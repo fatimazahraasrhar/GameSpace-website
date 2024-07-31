@@ -5,6 +5,7 @@ include('login_form.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/gamespaceicon.png"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profil</title>
@@ -43,7 +44,7 @@ include('login_form.php');
     <p>name : <?= $_SESSION['name'] ?> </p>
     <p>email : <?= $_SESSION['email'] ?> </p>
     <p>phone : <?= $_SESSION['phone'] ?> </p>
-    <a href="update.php" class="btn">update my profil</a>
+    <a href="update_profil.php" class="btn">update my profil</a>
     </div>
 </section>
 <!-- display profile section ends -->

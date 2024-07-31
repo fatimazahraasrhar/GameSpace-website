@@ -1,3 +1,4 @@
+<?php include('update_reservation_form.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,35 +19,60 @@
  <section class="header">
  <a href="home.php" class="logo">GameSpace</a>
  <nav class="navbar">
-    <a href="home.php">home</a>
+ <a href="home.php">home</a>
     <a href="about.php">about</a>
     <a href="events.php">events</a>
-    <a href="sign.php">sign up</a>
+    <a href="register.php">register</a>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
+    <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
 <!-- header section ends  -->
 
-
-<!-- login section starts -->
-<section class="login">
-    <h1 class="heading-title">login!</h1>
-    <form action="login_form.php" method="post" class="login-form">
+<!-- register section starts -->
+<section class="sign">
+    <h1 class="heading-title">update your reservation!</h1>
+    <form action="" method="post" class="sign-form">
         <div class="flex">
             <div class="inputbox">
-                <span>email :</span>
-                <input type="email" placeholder="enter your email" name="email">
+                <span>new console :</span>
+                <input type="text" placeholder="choose your console" list="console" name="console" value="<?php echo $reservation['console']; ?>">
+                <datalist id="console">
+                <option value="xbox">xbox</option>
+                <option value="playstation">playstation</option>
+                <option value="nintendo">nintendo</option>
+                </datalist>
             </div>
             <div class="inputbox">
-                <span>password :</span>
-                <input type="password" placeholder="enter your password" name="password">
+                <span>new screen :</span>
+                <input type="text" placeholder="choose your screen" list="screen" name="screen" value="<?php echo $reservation['screen'] ?>">
+                <datalist id="screen">
+                <option value="hp">hp</option>
+                <option value="dell">dell</option>
+                <option value="asus">asus</option>
+                <option value="samsung">samsung</option>
+                </datalist>
+            </div>
+            <div class="inputbox">
+                <span>new date :</span>
+                <input type="date" name="date" value="<?php echo $reservation['date'] ?>">
+            </div>
+            <div class="inputbox">
+                <span>new debut time :</span>
+                <input type="time" name="time" value="<?php echo $reservation['time'] ?>">
+            </div>
+            <div class="inputbox">
+                <span>new period in minutes :</span>
+                <input type="number" placeholder="enter your period" name="period" value="<?php echo $reservation['period'] ?>">
             </div>
         </div>
-        <input type="submit" value="login" class="btn" name="login">
-        <a href="sign.php" class="btn">sign up</a> 
+        <input type="submit" value="update" class="btn" name="send">
     </form>
 </section>
-<!-- login section ends -->
+<!-- register section ends -->
 
 
 <!-- footer section starts -->

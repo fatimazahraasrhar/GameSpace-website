@@ -1,5 +1,4 @@
 <?php
-
 $connection = mysqli_connect('localhost','root','','registration_db');
 
 // $reservations = array();
@@ -33,10 +32,14 @@ if (isset($_SESSION['email'])) {
         <div class="content">
                     <h3>reservation :</h3>
                     <p>Console: <?= $reservation['console'] ?></p>
-                    <p>PC: <?= $reservation['pc'] ?></p>
+                    <p>screen: <?= $reservation['screen'] ?></p>
                     <p>Date: <?= $reservation['date'] ?></p>
                     <p>Time: <?= $reservation['time'] ?></p>
                     <p>Period: <?= $reservation['period'] ?></p>
+                    <p>id reservation: <?= $reservation['id_reservation'] ?></p>
+
+                    <a href="update_reservation.php?id=<?= $reservation['id_reservation'] ?>" class="btn">update my reservation</a>
+
                     </div>
                     </section>
             <?php  endwhile; }?>

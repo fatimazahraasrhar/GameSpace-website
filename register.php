@@ -5,6 +5,7 @@ include('login_form.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/gamespaceicon.png"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
@@ -48,9 +49,9 @@ include('login_form.php');
                 </datalist>
             </div>
             <div class="inputbox">
-                <span>pc :</span>
-                <input type="text" placeholder="choose your pc" list="pc" name="pc">
-                <datalist id="pc">
+                <span>screen :</span>
+                <input type="text" placeholder="choose your screen" list="screen" name="screen">
+                <datalist id="screen">
                 <option value="hp">hp</option>
                 <option value="dell">dell</option>
                 <option value="asus">asus</option>

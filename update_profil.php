@@ -5,6 +5,7 @@ include('login_form.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/gamespaceicon.png"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
@@ -32,7 +33,7 @@ include('login_form.php');
 
 <!-- register section starts -->
 <section class="sign">
-    <h1 class="heading-title">update!</h1>
+    <h1 class="heading-title">update your profil !</h1>
     <form action="update_profil_form.php" method="post" class="sign-form">
         <div class="flex">
             <div class="inputbox">
