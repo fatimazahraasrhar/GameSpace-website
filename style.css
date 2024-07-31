@@ -11,6 +11,7 @@
     --border: .1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0, .1);
     --text-shadow:0 1.5rem 3rem rgba(0,0,0, .3);
+    --light-blue:
 
 }
 * {
@@ -166,6 +167,8 @@ section{
     background: var(--light-bg);
     max-width: 70rem; /* Adjust the maximum width as needed */
     margin: auto;
+    border-radius: 30px;
+
 }
 .home-about .content h3{
     font-size: 3rem;
@@ -284,9 +287,6 @@ section{
 .registration .registration-form .btn{
     margin-top: 2rem;
 }
-
-
-
 .sign .sign-form{
     padding: 2rem;
     background: var(--light-bg);
@@ -374,9 +374,9 @@ section{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    width: 400px;
+    width: 80%;
     text-align: left;
-    margin: 40px 250px;
+    margin: 40px 150px;
     background: var(--light-bg);
 }
 
@@ -395,10 +395,66 @@ section{
     font-size: 2rem;
     color:var(--black); 
 }
-.icon{
-    border-radius: 40px;
+.reservation {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 30%;
+    text-align: left;
+    margin: 40px 150px;
+    background: var(--light-bg);
+    
+}
+.reservation h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
+.reservation p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.reservation p span{
+    font-size: 2rem;
+    color:var(--black); 
+}
+.reservations-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    margin: 40px 150px;
+}
+.styled-select {
+    position: relative;
+    width: 200px;
+    height: 34px;
+    overflow: hidden;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.styled-select select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    padding: 8px 12px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.styled-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    pointer-events: none;
+    color: #666;
+}
 .footer{
     background: url(gaming-bg.jpg) no-repeat;
     background-size: cover;
@@ -444,8 +500,6 @@ section{
 
 
 
-
-
 /* media queries */
 @media (max-width:1200px){
     section{
@@ -486,6 +540,29 @@ section{
         text-align: center;
 
     }
+    .profil {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        width: 80%;
+        text-align: left;
+        margin: 40px 50px;
+        background: var(--light-bg);
+    }
+    .reservation {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        width: 80%;
+        text-align: left;
+        margin: 40px 50px;
+        background: var(--light-bg);
+    }
+    .reservations-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin: 40px 50px;
+    }
 }
 @media (max-width:991px){
     html{
@@ -503,6 +580,24 @@ section{
     .home .slide .content h3{
         font-size: 10vw;
     }
+    .profil {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        width: 80%;
+        text-align: left;
+        margin: 40px 50px;
+        background: var(--light-bg);
+    }
+    .reservation {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        width: 80%;
+        text-align: left;
+        margin: 40px 50px;
+        background: var(--light-bg);
+}
     
 }
 

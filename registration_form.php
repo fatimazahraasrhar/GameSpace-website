@@ -1,7 +1,8 @@
 <?php
+include('login_form.php');
 $connection = mysqli_connect('localhost','root','','registration_db');
 if (isset($_POST['send'])) {
-    $email_user = $_POST['email_user'];
+    $email_user = $_SESSION['email'];
     $console = $_POST['console'];
     $pc = $_POST['pc'];
     $date = $_POST['date'];

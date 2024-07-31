@@ -18,17 +18,24 @@ if (isset($_SESSION['id'])) {
 
 }
 ?>
-
-<section class="profil">
+<?php if($result->num_rows == 0) {?>
+    <section class="reservation">
+        <div class="content">
+    <h3>no reservations yet </h3>
+    <a href="register.php" class="btn">make a reservation?</a>
+    </div>
+    </section>
+<?php } else { ?>
+    <h3 class="reservations-title"> my reservations : </h3>
     <?php while ($reservation = mysqli_fetch_assoc($result)): ?>
-                <div class="content">
-                    <h3>My reservation</h3>
+        <section class="reservation">
+        <div class="content">
+                    <h3>reservation :</h3>
                     <p>Console: <?= $reservation['console'] ?></p>
                     <p>PC: <?= $reservation['pc'] ?></p>
                     <p>Date: <?= $reservation['date'] ?></p>
                     <p>Time: <?= $reservation['time'] ?></p>
                     <p>Period: <?= $reservation['period'] ?></p>
-                </div>
-            <?php endwhile; ?>
-  
-</section>
+                    </div>
+                    </section>
+            <?php  endwhile; }?>

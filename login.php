@@ -1,4 +1,3 @@
-<?php include("login_form.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,7 @@
     <a href="home.php">home</a>
     <a href="about.php">about</a>
     <a href="events.php">events</a>
-    <a href="register.php">register</a>
+    <a href="sign.php">sign up</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>

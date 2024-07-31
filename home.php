@@ -1,8 +1,11 @@
+<?php 
+include('login_form.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link class="icon" rel="shortcut icon" type="x-icon" href="gamespaceicon.jpg"> <!-- icon -->
+    <link rel="shortcut icon" type="x-icon" href="gamespaceicon.jpg"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameSpace</title>
@@ -21,8 +24,10 @@
     <a href="home.php">home</a>
     <a href="about.php">about</a>
     <a href="events.php">events</a>
-    <a href="register.php">register</a>
-    <a href="login.php">login</a>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
+    <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?>    
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
@@ -70,14 +75,11 @@
 
 <!-- home about section starts -->
 <section class="home-about">
-  
-
     <div class="content">
     <h3>about us</h3>
     <p>Welcome to GameSpace, the ultimate destination for gamers of all ages and skill levels! Founded by passionate gamers, our state-of-the-art lounge features cutting-edge gaming stations, exciting tournaments, and a vibrant community. Whether you're here to play casually or compete professionally, GameSpace offers an immersive and inclusive environment where everyone can have fun and make new friends. Join us for the latest games, exclusive events, and unbeatable experiences!</p>
     <a href="about.php" class="btn">read more</a>
     </div>
-
 </section>
 <!-- home about section ends -->
 

@@ -25,9 +25,7 @@ include('login_form.php');
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <a href="register.php">register</a>
-    <?php if (isset($_SESSION['islogin']) && $_SESSION['islogin']): ?>
-        <a href="logout.php">Logout</a>  <a  href="#" style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
-                <?php endif; ?>
+    <a href="logout.php">Logout</a><a style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
@@ -45,6 +43,7 @@ include('login_form.php');
     <p>name : <?= $_SESSION['name'] ?> </p>
     <p>email : <?= $_SESSION['email'] ?> </p>
     <p>phone : <?= $_SESSION['phone'] ?> </p>
+    <a href="register.php" class="btn">update my profil</a>
     </div>
 </section>
 <!-- display profile section ends -->

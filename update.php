@@ -1,6 +1,3 @@
-<?php 
-include('login_form.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,55 +17,36 @@ include('login_form.php');
  <section class="header">
  <a href="home.php" class="logo">GameSpace</a>
  <nav class="navbar">
- <a href="home.php">home</a>
+    <a href="home.php">home</a>
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <a href="register.php">register</a>
-    <?php if(!isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
-    <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
-    <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
-    <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 
+    <a href="login.php">login</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
 <!-- header section ends  -->
 
 <!-- register section starts -->
-<section class="registration">
-    <h1 class="heading-title">join the ultimate gaming experience by reserving your place!</h1>
-    <form action="registration_form.php" method="post" class="registration-form">
+<section class="sign">
+    <h1 class="heading-title">sign up!</h1>
+    <form action="sign_form.php" method="post" class="sign-form">
         <div class="flex">
             <div class="inputbox">
-                <span>console :</span>
-                <input type="text" placeholder="choose your console" list="console" name="console">
-                <datalist id="console">
-                <option value="xbox">xbox</option>
-                <option value="playstation">playstation</option>
-                <option value="nintendo">nintendo</option>
-                </datalist>
-                <!-- <input type="text" placeholder="choose your console" name="console"> -->
+                <span>new name:</span>
+                <input type="text" placeholder="enter your name" name="name">
             </div>
             <div class="inputbox">
-                <span>pc :</span>
-                <input type="text" placeholder="choose your pc" list="pc" name="pc" id="pc">
-                <datalist id="pc">
-                <option value="hp">hp</option>
-                <option value="dell">dell</option>
-                <option value="asus">asus</option>
-                <option value="samsung">samsung</option>
-                </datalist>
+                <span>new email :</span>
+                <input type="email" placeholder="enter your email" name="email">
             </div>
             <div class="inputbox">
-                <span>date :</span>
-                <input type="date" name="date">
+                <span>password :</span>
+                <input type="password" placeholder="enter your password" name="password">
             </div>
             <div class="inputbox">
-                <span>debut time :</span>
-                <input type="time" name="time">
-            </div>
-            <div class="inputbox">
-                <span>period in minutes :</span>
-                <input type="number" placeholder="enter your period" name="period">
+                <span>new phone :</span>
+                <input type="phone" placeholder="enter your phone" name="phone">
             </div>
         </div>
         <input type="submit" value="submit" class="btn" name="send">

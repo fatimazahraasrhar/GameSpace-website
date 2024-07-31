@@ -1,3 +1,6 @@
+<?php 
+include('login_form.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +20,13 @@
  <section class="header">
  <a href="home.php" class="logo">GameSpace</a>
  <nav class="navbar">
-    <a href="home.php">home</a>
+ <a href="home.php">home</a>
     <a href="about.php">about</a>
     <a href="events.php">events</a>
-    <a href="register.php">register</a>
-    <a href="login.php">login</a>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
+    <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
