@@ -1,9 +1,10 @@
 <?php
+
 $connection = mysqli_connect('localhost','root','','registration_db');
 
 // $reservations = array();
 
-if (isset($_SESSION['id'])) {
+if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
 
     if($connection->connect_error){

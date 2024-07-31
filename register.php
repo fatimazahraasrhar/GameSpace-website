@@ -46,11 +46,10 @@ include('login_form.php');
                 <option value="playstation">playstation</option>
                 <option value="nintendo">nintendo</option>
                 </datalist>
-                <!-- <input type="text" placeholder="choose your console" name="console"> -->
             </div>
             <div class="inputbox">
                 <span>pc :</span>
-                <input type="text" placeholder="choose your pc" list="pc" name="pc" id="pc">
+                <input type="text" placeholder="choose your pc" list="pc" name="pc">
                 <datalist id="pc">
                 <option value="hp">hp</option>
                 <option value="dell">dell</option>

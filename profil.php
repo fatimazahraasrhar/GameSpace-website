@@ -43,7 +43,7 @@ include('login_form.php');
     <p>name : <?= $_SESSION['name'] ?> </p>
     <p>email : <?= $_SESSION['email'] ?> </p>
     <p>phone : <?= $_SESSION['phone'] ?> </p>
-    <a href="register.php" class="btn">update my profil</a>
+    <a href="update.php" class="btn">update my profil</a>
     </div>
 </section>
 <!-- display profile section ends -->

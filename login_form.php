@@ -15,9 +15,9 @@ if (isset($_POST['login'])) {
 
     if($result->num_rows == 1){
         $user = $result->fetch_assoc();
-        $_SESSION['id']=  $user['id'];
-        $_SESSION['email']= $user['email'];
+        $_SESSION['id']=$user['id'];
         $_SESSION['name']=$user['name'];
+        $_SESSION['email']= $user['email'];
         $_SESSION['phone']=$user['phone'];
 
         header("location:profil.php");

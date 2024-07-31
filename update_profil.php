@@ -1,3 +1,6 @@
+<?php 
+include('login_form.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,27 +32,27 @@
 
 <!-- register section starts -->
 <section class="sign">
-    <h1 class="heading-title">sign up!</h1>
-    <form action="sign_form.php" method="post" class="sign-form">
+    <h1 class="heading-title">update!</h1>
+    <form action="update_profil_form.php" method="post" class="sign-form">
         <div class="flex">
             <div class="inputbox">
                 <span>new name:</span>
-                <input type="text" placeholder="enter your name" name="name">
+                <input type="text" placeholder="enter your name" name="name" value="<?php echo $_SESSION['name'] ?>">
             </div>
             <div class="inputbox">
                 <span>new email :</span>
-                <input type="email" placeholder="enter your email" name="email">
+                <input type="email" placeholder="enter your email" name="email" value="<?php echo $_SESSION['email'] ?>">
             </div>
-            <div class="inputbox">
+            <!-- <div class="inputbox">
                 <span>password :</span>
                 <input type="password" placeholder="enter your password" name="password">
-            </div>
+            </div> -->
             <div class="inputbox">
                 <span>new phone :</span>
-                <input type="phone" placeholder="enter your phone" name="phone">
+                <input type="phone" placeholder="enter your phone" name="phone" value="<?php echo $_SESSION['phone'] ?>">
             </div>
         </div>
-        <input type="submit" value="submit" class="btn" name="send">
+        <input type="submit" value="update" class="btn" name="update">
     </form>
 </section>
 <!-- register section ends -->
