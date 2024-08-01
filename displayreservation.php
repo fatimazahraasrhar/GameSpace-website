@@ -36,10 +36,14 @@ if (isset($_SESSION['email'])) {
                     <p>Date: <?= $reservation['date'] ?></p>
                     <p>Time: <?= $reservation['time'] ?></p>
                     <p>Period: <?= $reservation['period'] ?></p>
-                    <p>id reservation: <?= $reservation['id_reservation'] ?></p>
 
+                    <?php $dateNow = Time();?> 
+                 
+                    <?php $reservationDate =  strtotime($reservation['date']); ?>
+
+                    <?php if($reservationDate > $dateNow) { ?>
                     <a href="update_reservation.php?id=<?= $reservation['id_reservation'] ?>" class="btn">update my reservation</a>
-
+                    <?php } ?>
                     </div>
                     </section>
             <?php  endwhile; }?>

@@ -34,7 +34,7 @@
 
 <!-- register section starts -->
 <section class="sign">
-    <h1 class="heading-title">update your reservation!</h1>
+    <h1 class="heading-title">update your reservation !</h1>
     <form action="" method="post" class="sign-form">
         <div class="flex">
             <div class="inputbox">
