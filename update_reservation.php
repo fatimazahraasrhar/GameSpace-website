@@ -22,7 +22,6 @@
  <a href="home.php">home</a>
     <a href="about.php">about</a>
     <!-- <a href="events.php">events</a> -->
-    <a href="register.php">register</a>
     <?php if(!isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
@@ -83,7 +82,6 @@
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
         <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
-        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
         </div>
 
         <div class="box">

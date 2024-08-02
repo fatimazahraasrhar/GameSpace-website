@@ -63,7 +63,7 @@
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
         <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
-        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>book</a>
         </div>
 
         <div class="box">

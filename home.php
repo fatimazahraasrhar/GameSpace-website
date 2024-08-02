@@ -26,7 +26,7 @@ include('login_form.php');
     <!-- <a href="events.php">events</a> -->
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
-    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>book</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
     <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?>    
 </nav>
@@ -38,7 +38,7 @@ include('login_form.php');
 <section class="home">
     <div class="swiper home-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide sl1" style="background:url(img/slide1.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url(img/slide1.jpg) no-repeat;">
                 <div class="content">
                     <h3>welcome to GameSpace!</h3>
                     <span>Step into the ultimate gaming hub.<br> Join us for top-notch consoles, thrilling games, and an epic experience.<br> Ready to play?</span>

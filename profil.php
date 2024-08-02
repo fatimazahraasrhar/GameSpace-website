@@ -25,7 +25,7 @@ include('login_form.php');
     <a href="home.php">home</a>
     <a href="about.php">about</a>
     <!-- <a href="events.php">events</a> -->
-    <a href="register.php">register</a>
+    <a href="register.php">book</a>
     <a href="logout.php">Logout</a><a style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
@@ -33,7 +33,7 @@ include('login_form.php');
 <!-- header section ends  -->
 
 <!-- events section starts -->
-<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat; height: 40vh;">
+<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat">
 <h1>profil</h1>
 </div>
 <!-- display profile section starts -->
@@ -77,9 +77,8 @@ include('login_form.php');
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
+        <a href="about.php"><i class="fas fa-angle-right"></i>book</a>
         <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
-        <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
-        <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
         <div class="box">
