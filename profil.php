@@ -24,7 +24,7 @@ include('login_form.php');
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <a href="events.php">events</a>
+    <!-- <a href="events.php">events</a> -->
     <a href="register.php">register</a>
     <a href="logout.php">Logout</a><a style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
 </nav>
@@ -37,7 +37,6 @@ include('login_form.php');
 <h1>profil</h1>
 </div>
 <!-- display profile section starts -->
-
  <section class="profil">
     <div class="content">
     <h3>my profil</h3>
@@ -45,10 +44,29 @@ include('login_form.php');
     <p>email : <?= $_SESSION['email'] ?> </p>
     <p>phone : <?= $_SESSION['phone'] ?> </p>
     <a href="update_profil.php" class="btn">update my profil</a>
+    <a type="submit" href="delete_profil.php" class="btn">delete my profil</a>
     </div>
 </section>
 <!-- display profile section ends -->
 
+<!-- display pop up starts  -->
+ <!-- <div class="container">
+    <div class="popup" id="popup" id="blur">
+    <h3>delete account</h3>
+    <p>are you sure you want to delete account </p>
+    <a type="button" href="delete_profil.php" onclick="togglePopup()" class="btn">delete my account</a>
+    </div>
+    </div> -->
+<!-- display pop up ends  -->
+
+<!-- <div class="container">
+<div class="popup" id="popup1" >
+    <h3>delete reservation</h3>
+    <p>are you sure you want to delete reservation </p>
+    <a type="button" href="delete_reservation.php" onclick="togglePopup1()" class="btn">delete my reservation</a>
+    </div>
+    </div> -->
+    
 <!-- display reservation section starts -->
 <?php include 'displayreservation.php'; ?>
 <!-- display reservation section ends -->
@@ -59,8 +77,9 @@ include('login_form.php');
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <a href="events.php"><i class="fas fa-angle-right"></i>events</a>
-        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
+        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
+        <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
         <div class="box">

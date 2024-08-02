@@ -23,8 +23,9 @@ include('login_form.php');
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <a href="events.php">events</a>
+    <!-- <a href="events.php">events</a> -->
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
     <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?>    
@@ -143,8 +144,9 @@ include('login_form.php');
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <a href="events.php"><i class="fas fa-angle-right"></i>events</a>
-        <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
+        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
+        <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
         <div class="box">

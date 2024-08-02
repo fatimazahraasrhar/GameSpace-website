@@ -455,6 +455,40 @@ section{
     pointer-events: none;
     color: #666;
 }
+/* General styles for the popups */
+.container {
+    position: relative;
+}
+
+.popup, .popup1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001; /* Above the blur effect */
+}
+.popup1 h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+.container .popup1 p{
+    font-size: 3rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+/* Button styles */
+
+
+/* Blur effect */
+.blur-background {
+    filter: blur(5px);
+    pointer-events: none; /* Disable interaction with blurred content */
+}
 .footer{
     background: url(img/gaming-bg.jpg) no-repeat;
     background-size: cover;

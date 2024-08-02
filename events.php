@@ -25,6 +25,7 @@ include('login_form.php');
     <a href="about.php">about</a>
     <a href="events.php">events</a>
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
     <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 

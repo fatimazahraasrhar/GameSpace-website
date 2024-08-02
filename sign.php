@@ -20,8 +20,7 @@
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <a href="events.php">events</a>
-    <a href="register.php">register</a>
+    <!-- <a href="events.php">events</a> -->
     <a href="login.php">login</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
@@ -63,7 +62,7 @@
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <a href="events.php"><i class="fas fa-angle-right"></i>events</a>
+        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
         <a href="register.php"><i class="fas fa-angle-right"></i>register</a>
         </div>
 
