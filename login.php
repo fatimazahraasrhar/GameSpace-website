@@ -57,7 +57,7 @@
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
+        <?php if(!isset($_SESSION['email'])) echo " <a href=;'book.php'><i class='fas fa-angle-right'></i>book</a>";?>
         <a href="sign.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
