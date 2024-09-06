@@ -1,4 +1,6 @@
-<?php include('update_reservation_form.php'); ?>
+<?php 
+include('login_form.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <link rel="shortcut icon" type="x-icon" href="img/gamespaceicon.png"> <!-- icon -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <title>make a reservation?</title>
     <!-- swiper css link  -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- font cdn link -->
@@ -22,54 +24,32 @@
  <a href="home.php">home</a>
     <a href="about.php">about</a>
     <!-- <a href="events.php">events</a> -->
-    <a href="register.php">book</a>
-    <a href="logout.php">Logout</a><a style="color:#8C3061"><i class="fa-solid fa-user"></i><?php echo htmlspecialchars($_SESSION['name']); ?></a>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='book.php'>book</a>";?>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
+    <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>book</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
+    <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
  </section>
 <!-- header section ends  -->
 
-<!-- register section starts -->
-<section class="sign">
-    <h1 class="heading-title">update your reservation !</h1>
-    <form action="" method="post" class="sign-form">
-        <div class="flex">
-            <div class="inputbox">
-                <span>new console :</span>
-                <input type="text" placeholder="choose your console" list="console" name="console" value="<?php echo $reservation['console']; ?>">
-                <datalist id="console">
-                <option value="xbox">xbox</option>
-                <option value="playstation">playstation</option>
-                <option value="nintendo">nintendo</option>
-                </datalist>
-            </div>
-            <div class="inputbox">
-                <span>new screen :</span>
-                <input type="text" placeholder="choose your screen" list="screen" name="screen" value="<?php echo $reservation['screen'] ?>">
-                <datalist id="screen">
-                <option value="hp">hp</option>
-                <option value="dell">dell</option>
-                <option value="asus">asus</option>
-                <option value="samsung">samsung</option>
-                </datalist>
-            </div>
-            <div class="inputbox">
-                <span>new date :</span>
-                <input type="date" name="date" value="<?php echo $reservation['date'] ?>" min="">
-            </div>
-            <div class="inputbox">
-                <span>new debut time :</span>
-                <input type="time" name="time" value="<?php echo $reservation['time'] ?>">
-            </div>
-            <div class="inputbox">
-                <span>new period in minutes :</span>
-                <input type="number" placeholder="enter your period" name="period" value="<?php echo $reservation['period'] ?>">
-            </div>
-        </div>
-        <input type="submit" value="update" class="btn" name="send">
-    </form>
+<section class="about" >
+    <div class="content">
+    <h3>how to make a reservation ?</h3>
+    <!-- <h4>Your Premier Gaming Destination</h4> -->
+    <p style="text-align: left;">To make a reservation, you need to be a registered user.<a href="sign.php" target="_blank" style="text-decoration: underline;"> Sign up</a> for a new account or <a href="login.php" target="_blank" style="text-decoration: underline;"> login</a> if you already have one.</p>
+    <p style="text-align: left;">Once you're logged in to your account, go to the reservation section of our website.</p>
+    <p style="text-align: left;">Select the gaming console you'd like to use.</p>
+    <p style="text-align: left;">Pick the screen you prefer for your gaming session.</p>
+    <p style="text-align: left;">Choose the date for your gaming session.</p>
+    <p style="text-align: left;">Select the time you want your reservation to begin.</p>
+    <p style="text-align: left;">Decide how long you want to reserve the gaming station for.</p>
+    <p style="text-align: left;">Your reservation will be processed, and you can enjoy your gaming session at the selected time and date.</p>
+</div>
 </section>
-<!-- register section ends -->
+<!-- about section ends -->
 
 
 <!-- footer section starts -->
@@ -79,7 +59,8 @@
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
+        <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
+        <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
         <div class="box">
@@ -93,7 +74,7 @@
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace001@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 

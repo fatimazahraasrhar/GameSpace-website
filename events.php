@@ -78,7 +78,7 @@ include('login_form.php');
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace001@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 

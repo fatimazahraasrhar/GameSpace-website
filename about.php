@@ -24,9 +24,10 @@ include('login_form.php');
  <a href="home.php">home</a>
     <a href="about.php">about</a>
     <!-- <a href="events.php">events</a> -->
+    <?php if(!isset($_SESSION['email'])) echo "<a href='book.php'>book</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
-    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>Register</a>";?>
+    <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>book</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='logout.php'>logout</a>" ;?>
     <?php if(isset($_SESSION['email'])) echo "<a  href='profil.php' style='color:#8C3061'><i class='fa-solid fa-user'></i>".$_SESSION['name'] ."</a>" ;?> 
 </nav>
@@ -35,7 +36,7 @@ include('login_form.php');
 <!-- header section ends  -->
 
 <!-- about section starts -->
-<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat; height: 40vh;">
+<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat; height: 25vh;">
 <h1>about us</h1>
 </div>
 
@@ -51,7 +52,7 @@ include('login_form.php');
     <!-- <h4>Community & Events</h4> -->
     <p>We believe in building a vibrant gaming community. Our regular events and tournaments provide exciting opportunities for gamers to showcase their skills, compete with peers, and meet new friends. GameSpace is not just about playing games—it's about connecting with fellow enthusiasts and being part of a dynamic community.</p>
     <!-- <h4>Get In Touch</h4> -->
-    <p>Ready to experience GameSpace for yourself? For more information or to book your next session, contact us at <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=fatimazahraasrhar@gmail.com" target="_blank" style="text-transform: lowercase">fatimazahraasrhar@gmail.com</a> or follow us on social media for the latest updates and event announcements. We look forward to welcoming you to GameSpace!</p>
+    <p>Ready to experience GameSpace for yourself? For more information or to book your next session, visit our <a href="book.php" target="_blank" style="text-transform: lowercase ;text-decoration: underline;">book now</a> page, contact us at <a href="" target="_blank" style="text-transform: lowercase ;text-decoration: underline;">gamespace001@gmail.com</a> or follow us on social media for the latest updates and event announcements. We look forward to welcoming you to GameSpace!</p>
 </div>
 </section>
 <!-- about section ends -->
@@ -64,7 +65,6 @@ include('login_form.php');
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-        <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
         <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
         <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
@@ -86,10 +86,10 @@ include('login_form.php');
 
         <div class="box">
         <h3>follow us</h3>
-        <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
-        <a href="#"> <i class="fab fa-x-twitter"></i> X</a>
-        <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
-        <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Game Space</a>
+        <a href="#"> <i class="fab fa-discord"></i> GSpace</a>
+        <a href="#"> <i class="fab fa-instagram"></i> gamespace001</a>
+        <a href="#"> <i class="fab fa-linkedin"></i> GameSpace inc</a>
         </div>
     </div>
     <div class="credit"> created by fatima zahra asrhar </div>

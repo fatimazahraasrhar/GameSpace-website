@@ -20,7 +20,8 @@
  <nav class="navbar">
     <a href="home.php">home</a>
     <a href="about.php">about</a>
-    <!-- <a href="events.php">events</a> -->
+    <?php if(!isset($_SESSION['email'])) echo "<a href='book.php'>book</a>";?>
+    <a href="login.php">login</a>
     <a href="sign.php">sign up</a>
 </nav>
 <div id="menu-btn" class="fas fa-bars"> </div>
@@ -71,16 +72,16 @@
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace001@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 
         <div class="box">
         <h3>follow us</h3>
-        <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
-        <a href="#"> <i class="fab fa-x-twitter"></i> X</a>
-        <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
-        <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Game Space</a>
+        <a href="#"> <i class="fab fa-discord"></i> GSpace</a>
+        <a href="#"> <i class="fab fa-instagram"></i> gamespace001</a>
+        <a href="#"> <i class="fab fa-linkedin"></i> GameSpace inc</a>
         </div>
     </div>
     <div class="credit"> created by fatima zahra asrhar </div>

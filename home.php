@@ -24,6 +24,7 @@ include('login_form.php');
     <a href="home.php">home</a>
     <a href="about.php">about</a>
     <!-- <a href="events.php">events</a> -->
+    <?php if(!isset($_SESSION['email'])) echo "<a href='book.php'>book</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='login.php'>login</a>";?>
     <?php if(!isset($_SESSION['email'])) echo "<a href='sign.php'>sign up</a>";?>
     <?php if(isset($_SESSION['email'])) echo "<a href='register.php'>book</a>";?>
@@ -45,16 +46,16 @@ include('login_form.php');
                     <a href="about.php" class="btn">discover more</a>
                 </div>
 
-            </div>
-            <div class="swiper-slide slide" style="background:url(img/slide2.jpg) no-repeat">
+            <!-- </div> -->
+            <!-- <div class="swiper-slide slide" style="background:url(img/slide2.jpg) no-repeat">
                 <div class="content">
                     <h3>game of the month</h3>
                     <span>Experience the epic journey of Stellar Blade,  <br> our game of the month! Dive into an extraordinary <br>  world of futuristic combat and breathtaking  <br> visuals.</span>
                     <a href="register.php" class="btn">play now</a>
                 </div>
 
-            </div>
-            <div class="swiper-slide slide" style="background:url(img/slide3.jpg) no-repeat">
+            </div> -->
+            <!-- <div class="swiper-slide slide" style="background:url(img/slide3.jpg) no-repeat">
                 <div class="content">
                 <h3>FIFA Tournament</h3>
                     <span><p><strong>Date:</strong> August 15th</p>
@@ -64,10 +65,10 @@ include('login_form.php');
                     <a href="register.php" class="btn">Register Now</a>
                 </div>
 
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
         <!-- <div class="swiper-pagination"></div> -->
     </div>
 </section>
@@ -144,9 +145,10 @@ include('login_form.php');
         <h3>quick links</h3>
         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
         <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
+        <?php if(!isset($_SESSION['email'])) echo " <a href=;'book.php'><i class='fas fa-angle-right'></i>book</a>";?>
         <!-- <a href="events.php"><i class="fas fa-angle-right"></i>events</a> -->
-        <a href="register.php"><i class="fas fa-angle-right"></i>login</a>
-        <a href="register.php"><i class="fas fa-angle-right"></i>sign up</a>
+        <a href="login.php"><i class="fas fa-angle-right"></i>login</a>
+        <a href="sign.php"><i class="fas fa-angle-right"></i>sign up</a>
         </div>
 
         <div class="box">
@@ -160,16 +162,16 @@ include('login_form.php');
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#" style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
+        <a href="#" style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace001@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 
         <div class="box">
         <h3>follow us</h3>
-        <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
-        <a href="#"> <i class="fab fa-discord"></i> discord</a>
-        <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
-        <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Game Space</a>
+        <a href="#"> <i class="fab fa-discord"></i> GSpace</a>
+        <a href="#"> <i class="fab fa-instagram"></i> gamespace001</a>
+        <a href="#"> <i class="fab fa-linkedin"></i> GameSpace inc</a>
         </div>
     </div>
     <div class="credit"> created by fatima zahra asrhar </div>

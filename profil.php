@@ -32,10 +32,6 @@ include('login_form.php');
  </section>
 <!-- header section ends  -->
 
-<!-- events section starts -->
-<div class="heading" style="background:url(img/gaming-bg1.jpg) no-repeat">
-<h1>profil</h1>
-</div>
 <!-- display profile section starts -->
  <section class="profil">
     <div class="content">
@@ -92,16 +88,16 @@ include('login_form.php');
         <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 0668950581</a>
-        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace@gmail.com</a>
+        <a href="#"  style= "text-transform: lowercase"> <i class="fas fa-envelope"></i> gamespace001@gmail.com</a>
         <a href="#"> <i class="fas fa-map"></i> Casablanca, morocco</a>
         </div>
 
         <div class="box">
         <h3>follow us</h3>
-        <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
-        <a href="#"> <i class="fab fa-x-twitter"></i> X</a>
-        <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
-        <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Game Space</a>
+        <a href="#"> <i class="fab fa-discord"></i> GSpace</a>
+        <a href="#"> <i class="fab fa-instagram"></i> gamespace001</a>
+        <a href="#"> <i class="fab fa-linkedin"></i> GameSpace inc</a>
         </div>
     </div>
     <div class="credit"> created by fatima zahra asrhar </div>
